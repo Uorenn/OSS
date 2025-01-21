@@ -1,0 +1,36 @@
+// Helper function to add two numbers
+function add(a, b) {
+    return a + b;
+}
+
+// Helper function to subtract two numbers
+function subtract(a, b) {
+    return a - b;
+}
+
+// Helper function to multiply two numbers
+function multiply(a, b) {
+    return a * b;
+}
+
+// Helper function to divide two numbers
+function divide(a, b) {
+    if (b === 0) {
+        return "Cannot divide by zero";
+    }
+    return a / b;
+}
+
+// Function to display results
+function displayResults(a, b) {
+    console.log(`Adding ${a} and ${b}: ${add(a, b)}`);
+    console.log(`Subtracting ${b} from ${a}: ${subtract(a, b)}`);
+    console.log(`Multiplying ${a} and ${b}: ${multiply(a, b)}`);
+    console.log(`Dividing ${a} by ${b}: ${divide(a, b)}`);
+}
+
+// Example usage
+const num1 = 10;
+const num2 = 5;
+
+displayResults(num1, num2);
